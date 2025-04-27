@@ -1,0 +1,98 @@
+.register-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.register-container .card {
+  border-radius: 15px;
+  border: none;
+}
+
+.register-container h2 {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.register-container .form-group {
+  margin-bottom: 20px;
+}
+
+.register-container label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.register-container .form-control {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s;
+}
+
+.register-container .form-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+}
+
+.register-container .btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.register-container .btn-primary:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.register-container .user-type-selector {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.register-container .form-check-input:checked {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.register-container .specialist-fields,
+.register-container .employer-fields {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 4px solid #2563eb;
+}
+
+.invalid-feedback {
+  display: block;
+  color: #dc3545;
+  margin-top: 5px;
+  font-size: 0.875rem;
+}
+
+/* انیمیشن */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.specialist-fields,
+.employer-fields {
+  animation: fadeIn 0.5s ease-out;
+}

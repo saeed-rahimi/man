@@ -1,0 +1,97 @@
+/* تنظیمات فونت فارسی */
+@font-face {
+  font-family: "Vazir";
+  src: url("/fonts/Vazir.ttf") format("truetype");
+}
+
+body {
+  font-family: "Vazir", system-ui, sans-serif;
+  direction: rtl;
+  text-align: right;
+  overflow-x: hidden;
+}
+
+/* بخش هیرو */
+.hero-section {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  padding: 80px 0;
+}
+
+/* کارت‌های خدمات */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* کارت‌های چرا ما */
+.why-us-section .bi {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+/* نظرات مشتریان */
+.testimonials-section {
+  background-color: #f8f9fa;
+}
+
+.testimonials-section .card {
+  height: 100%;
+}
+
+/* فوتر */
+footer {
+  background: linear-gradient(to bottom, #343a40, #212529);
+}
+
+footer .footer-links a {
+  display: block;
+  transition: transform 0.3s;
+}
+
+footer .footer-links a:hover {
+  transform: translateX(-5px);
+  color: #2563eb !important;
+  text-decoration: none;
+}
+
+footer .social-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer .social-links a:hover {
+  background-color: #2563eb;
+  color: white !important;
+}
+
+/* عرض کل صفحه */
+.app > * {
+  width: 100vw;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* تنظیمات ریسپانسیو */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+}

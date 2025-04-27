@@ -1,0 +1,24 @@
+{
+  "name": "construction-job-platform",
+  "version": "1.0.0",
+  "description": "سامانه کاریاب آنلاین برای متخصصان و کارفرمایان حوزه ساختمان",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": [
+    "construction",
+    "job-platform",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
